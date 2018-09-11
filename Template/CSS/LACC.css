@@ -24,9 +24,9 @@ p {
     font: 1em arial, sans-serif;
 }
 
-event {
-    font: 1em arial, sans-serif;
-    padding-left: 3%
+.hanging {
+    padding-left: 4.5em;
+    text-indent: -4.5em;
 }
 
 .emphasis {
