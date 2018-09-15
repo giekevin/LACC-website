@@ -25,10 +25,12 @@ p {
 }
 
 .hanging {
-    padding-left: 4.5em;
+    padding-left: 7.5em;
     text-indent: -4.5em;
 }
-
+.indented {
+    padding-left: 3em;
+}
 .emphasis {
     font-style: italic;
 }
