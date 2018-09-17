@@ -10,4 +10,7 @@ Validate\ (Linux).sh
 IDEWorkspaceChecks.plist
 xcuserdata
 *.profraw
+
+# Custom
+
 /Result
