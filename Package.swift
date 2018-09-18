@@ -12,6 +12,7 @@ let package = Package(
             name: "generate",
             dependencies: [
                 .productItem(name: "SDGCornerstone", package: "SDGCornerstone")
-            ]),
+            ],
+            path: "Generator/Sources/generate"),
         ]
 )
