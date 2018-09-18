@@ -26,16 +26,29 @@ do {
 } catch let error {
     fatalError("\(error)")
 }
+
+let sermonResources = RepositoryStructure.externalResourcesDirectory.appendingPathComponent("Sermons")
 do {
     print("Copying sermons...")
-    try FileManager.default.copy(RepositoryStructure.externalResourcesDirectory.appendingPathComponent("Sermons"), to: RepositoryStructure.resultDirectory.appendingPathComponent("Sermons"))
+    try FileManager.default.copy(sermonResources, to: RepositoryStructure.resultDirectory.appendingPathComponent("Sermons"))
 } catch let error {
-    fatalError("\(error)")
+    if (try? sermonResources.checkResourceIsReachable()) ≠ true {
+        print("Warning: Sermons are unavailable.")
+    } else {
+        fatalError("\(error)")
+    }
 }
+
+let imageResources = RepositoryStructure.externalResourcesDirectory.appendingPathComponent("Images")
 do {
     print("Copying images...")
-    try FileManager.default.copy(RepositoryStructure.externalResourcesDirectory.appendingPathComponent("Images"), to: RepositoryStructure.resultDirectory.appendingPathComponent("Images"))
+    try FileManager.default.copy(imageResources, to: RepositoryStructure.resultDirectory.appendingPathComponent("Images"))
 } catch let error {
-    fatalError("\(error)")
+    if (try? imageResources.checkResourceIsReachable()) ≠ true {
+        print("Warning: Images are unavailable.")
+    } else {
+        fatalError("\(error)")
+    }
 }
+
 _ = try? Shell.default.run(command: ["open", RepositoryStructure.resultDirectory.appendingPathComponent("index.html").path])
