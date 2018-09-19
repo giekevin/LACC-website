@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "Generator",
     dependencies: [
-        .package(url: "https://github.com/SDGGiesbrecht/SDGCornerstone", .upToNextMinor(from: Version(0, 10, 1))),
+        .package(url: "https://github.com/SDGGiesbrecht/SDGCornerstone", .exact(Version(0, 11, 0))),
         ],
     targets: [
         .target(
