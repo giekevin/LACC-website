@@ -1,4 +1,4 @@
-// swift-tools-version:4.1
+// swift-tools-version:4.2
 
 import PackageDescription
 
@@ -11,7 +11,7 @@ let package = Package(
         .target(
             name: "generate",
             dependencies: [
-                .productItem(name: "SDGCornerstone", package: "SDGCornerstone")
+                .product(name: "SDGCornerstone", package: "SDGCornerstone")
             ],
             path: "Generator/Sources/generate"),
         ]
