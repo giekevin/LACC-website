@@ -77,7 +77,7 @@ nav a:hover {
     color: white;
 }
 
-#menu {
+#sidebar {
     width: 20%;
     position: fixed; /* Make it stick, even on scroll */
 }
