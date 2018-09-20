@@ -134,7 +134,7 @@ nav a:last-child {
 
 /* Footer */
 
-footer > div {
+footer {
     text-align: center;
     padding: 5px 10% 5px 10%;
     background-color: rgb(202,251,255);
