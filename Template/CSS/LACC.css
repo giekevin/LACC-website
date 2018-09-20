@@ -50,11 +50,28 @@ ul {
 body {
     margin: 0;
     padding: 0;
+    display: grid;
+     grid-template-areas:
+        "banner"
+        "between"
+        "footer"
+}
+
+#banner {
+    grid-area: "banner"
+}
+
+#between‐banner‐and‐footer {
+    grid-area: "between"
 }
 
 #sidebar {
     width: 20%;
     position: fixed; /* Make it stick, even on scroll */
+}
+
+#footer {
+    grid-area: "footer"
 }
 
 /* Banner */
