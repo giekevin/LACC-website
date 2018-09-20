@@ -52,26 +52,25 @@ body {
     padding: 0;
     display: grid;
      grid-template-areas:
-        "banner"
-        "between"
-        "footer"
+        "banner banner"
+        "sidebar content"
+        "footer footer";
 }
 
 #banner {
-    grid-area: "banner"
-}
-
-#between‐banner‐and‐footer {
-    grid-area: "between"
+    grid-area: banner;
 }
 
 #sidebar {
-    width: 20%;
-    position: fixed; /* Make it stick, even on scroll */
+    grid-area: sidebar;
 }
 
-#footer {
-    grid-area: "footer"
+#content {
+    grid-area: content;
+}
+
+footer {
+    grid-area: footer;
 }
 
 /* Banner */
@@ -128,8 +127,7 @@ nav a:last-child {
 
 /* Content */
 
-div.content {
-    margin-left: 20%;
+#content {
     padding: .5em;
 }
 
