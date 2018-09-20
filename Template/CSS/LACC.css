@@ -8,6 +8,10 @@ p {
     font: 1em arial, sans-serif;
 }
 
+em {
+    font-style: italic;
+}
+
 h1 {
     font-size: 2.5em;
     text-align: center;
@@ -22,6 +26,10 @@ h4 {
     font-size: 1.25em;
 }
 
+ul {
+    margin-left: 3em;
+}
+
 .indented {
     padding-left: 3em;
 }
@@ -33,14 +41,6 @@ h4 {
 
 .center {
     text-align: center;
-}
-
-em {
-    font-style: italic;
-}
-
-ul {
-    margin-left: 3em;
 }
 
 /* ••••••• Specific ••••••• */
