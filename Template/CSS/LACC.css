@@ -120,7 +120,7 @@ div.content {
     margin: 0px 1em;
 }
 /* ----- FOOTER */
-footer {
+footer > div {
     text-align: center;
     padding: 5px 10% 5px 10%;
     background-color: rgb(202,251,255);
