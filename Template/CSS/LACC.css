@@ -126,7 +126,7 @@ footer > div {
 
 /* ••••••• Contact Us ••••••• */
 
-.map {
+#map {
     margin-left: 20%;
     width: 60vw;
     height: calc(60vw * 9 / 16);
