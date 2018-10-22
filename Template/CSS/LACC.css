@@ -52,12 +52,14 @@ body {
     padding: 0;
     min-height: 100vh;
     display: grid;
-     grid-template-areas:
-        "banner banner"
-        "sidebar content"
-        "footer footer";
-     grid-template-rows:
-        auto 1fr auto;
+    grid-template-areas:
+    "banner banner"
+    "sidebar content"
+    "footer footer";
+    grid-template-rows:
+    auto 1fr auto;
+    grid-template-columns:
+    auto 1fr;
 }
 
 #banner {
