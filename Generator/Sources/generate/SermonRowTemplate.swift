@@ -55,7 +55,7 @@ class SermonRowTemplate {
     
     // MARK: - Processing
     
-    static let template = StrictString(try! String(from: RepositoryStructure.componentsDirectory.appendingPathComponent("Sermon Row.html")))
+    static let template = StrictString(try! String(from: repositoryStructure.components.appendingPathComponent("Sermon Row.html")))
     
     func processedResult() -> StrictString {
         var result = SermonRowTemplate.template

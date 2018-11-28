@@ -9,6 +9,15 @@
           "revision": "588c61fe739a57e2c1f1321ece545071818cd9c9",
           "version": "0.12.0"
         }
+      },
+      {
+        "package": "SDGWeb",
+        "repositoryURL": "https://github.com/SDGGiesbrecht/SDGWeb",
+        "state": {
+          "branch": null,
+          "revision": "5370f953bd29d6b263a55b0b54e7bf3346b04516",
+          "version": "0.0.1"
+        }
       }
     ]
   },
