@@ -1,36 +1,22 @@
 import Foundation
 
 import SDGCornerstone
+import SDGWeb
 
 ProcessInfo.applicationIdentifier = "ca.lacc.Website"
 
-do {
-    try FileManager.default.removeItem(at: RepositoryStructure.resultDirectory)
-} catch let error {
-    if FileManager.default.fileExists(atPath: RepositoryStructure.resultDirectory.path) {
-        fatalError("Failed to clean (empty) result directory: \(error)")
-    }
-}
+let site = Site<Localization>(
+    repositoryStructure: repositoryStructure,
+    domain: domain,
+    pageProcessor: LACCPageProcessor(),
+    reportProgress: { print($0) })
 
-for templateLocation in RepositoryStructure.allTemplatePages {
-    let relativePath = templateLocation.path(relativeTo: RepositoryStructure.pagesDirectory)
-    let resultLocation = RepositoryStructure.resultDirectory.appendingPathComponent(relativePath)
-    
-    let template = PageTemplate(from: templateLocation)
-    template.writeResult(to: resultLocation)
-}
+try site.generate()
 
-do {
-    print("Copying CSS...")
-    try FileManager.default.copy(RepositoryStructure.templateDirectory.appendingPathComponent("CSS"), to: RepositoryStructure.resultDirectory.appendingPathComponent("CSS"))
-} catch let error {
-    fatalError("\(error)")
-}
-
-let sermonResources = RepositoryStructure.externalResourcesDirectory.appendingPathComponent("Sermons")
+let sermonResources = repositoryStructure.externalResourcesDirectory.appendingPathComponent("Sermons")
 do {
     print("Copying sermons...")
-    try FileManager.default.copy(sermonResources, to: RepositoryStructure.resultDirectory.appendingPathComponent("Sermons"))
+    try FileManager.default.copy(sermonResources, to: repositoryStructure.result.appendingPathComponent("Sermons"))
 } catch let error {
     if (try? sermonResources.checkResourceIsReachable()) ≠ true {
         print("Warning: Sermons are unavailable.")
@@ -39,10 +25,10 @@ do {
     }
 }
 
-let imageResources = RepositoryStructure.externalResourcesDirectory.appendingPathComponent("Images")
+let imageResources = repositoryStructure.externalResourcesDirectory.appendingPathComponent("Images")
 do {
     print("Copying images...")
-    try FileManager.default.copy(imageResources, to: RepositoryStructure.resultDirectory.appendingPathComponent("Images"))
+    try FileManager.default.copy(imageResources, to: repositoryStructure.result.appendingPathComponent("Images"))
 } catch let error {
     if (try? imageResources.checkResourceIsReachable()) ≠ true {
         print("Warning: Images are unavailable.")
@@ -51,4 +37,4 @@ do {
     }
 }
 
-_ = try? Shell.default.run(command: ["open", RepositoryStructure.resultDirectory.appendingPathComponent("index.html").path])
+_ = try? Shell.default.run(command: ["open", repositoryStructure.result.appendingPathComponent("index.html").path])
