@@ -8,6 +8,7 @@ struct LACCPageProcessor : PageProcessor {
         title: StrictString,
         content: StrictString,
         siteRoot: StrictString,
+        localizationRoot: StrictString,
         relativePath: StrictString) {
 
         pageTemplate.replaceMatches(for: "[*Title*]".scalars, with: title)
