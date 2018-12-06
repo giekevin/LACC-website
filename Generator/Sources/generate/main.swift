@@ -8,6 +8,7 @@ ProcessInfo.applicationIdentifier = "ca.lacc.Website"
 let site = Site<Localization>(
     repositoryStructure: repositoryStructure,
     domain: domain,
+    localizationDirectories: localizatonDirectory,
     pageProcessor: LACCPageProcessor(),
     reportProgress: { print($0) })
 
