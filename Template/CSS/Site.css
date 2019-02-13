@@ -4,6 +4,10 @@ body {
     font-size: 100%;
 }
 
+.textcolumn {
+    max-width: 50em;
+}
+
 p {
     font: 1em arial, sans-serif;
 }
@@ -41,6 +45,17 @@ ul {
 
 .center {
     text-align: center;
+}
+.fixedsizecell {
+    white-space: nowrap;
+}
+
+.eventitem {
+    width:auto;
+    padding-left: 7.5em;
+}
+.eventitem td {
+    padding-right: 1em;
 }
 
 /* ••••••• Specific ••••••• */
