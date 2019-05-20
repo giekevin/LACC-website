@@ -8,8 +8,8 @@ let package = Package(
         .macOS(.v10_13)
     ],
     dependencies: [
-        .package(url: "https://github.com/SDGGiesbrecht/SDGCornerstone", .exact(Version(0, 16, 0))),
-        .package(url: "https://github.com/SDGGiesbrecht/SDGWeb", .exact(Version(0, 0, 3)))
+        .package(url: "https://github.com/SDGGiesbrecht/SDGCornerstone", .exact(Version(0, 18, 0))),
+        .package(url: "https://github.com/SDGGiesbrecht/SDGWeb", .exact(Version(0, 1, 0)))
         ],
     targets: [
         .target(
