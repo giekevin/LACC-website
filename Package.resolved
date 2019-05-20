@@ -2,12 +2,30 @@
   "object": {
     "pins": [
       {
+        "package": "SDGCommandLine",
+        "repositoryURL": "https://github.com/SDGGiesbrecht/SDGCommandLine",
+        "state": {
+          "branch": null,
+          "revision": "cf60a10c41b68ea65eb48ff1c9469a58fc792400",
+          "version": "0.7.1"
+        }
+      },
+      {
         "package": "SDGCornerstone",
         "repositoryURL": "https://github.com/SDGGiesbrecht/SDGCornerstone",
         "state": {
           "branch": null,
-          "revision": "0674531dc65578d95135cc05e79111b132cc3aab",
-          "version": "0.16.0"
+          "revision": "c649f83413bac211d2e8ba13326271147630783d",
+          "version": "0.18.0"
+        }
+      },
+      {
+        "package": "SDGSwift",
+        "repositoryURL": "https://github.com/SDGGiesbrecht/SDGSwift",
+        "state": {
+          "branch": null,
+          "revision": "b12df3622de47ce1c7d5646b3e9b85dc7aaa5b99",
+          "version": "0.10.0"
         }
       },
       {
@@ -15,8 +33,44 @@
         "repositoryURL": "https://github.com/SDGGiesbrecht/SDGWeb",
         "state": {
           "branch": null,
-          "revision": "f6446269d0a0f9b932bde4e12ff0aab380f5afab",
-          "version": "0.0.3"
+          "revision": "ed3f2cbaa94e1be77dfa1acd8618926260898de6",
+          "version": "0.1.0"
+        }
+      },
+      {
+        "package": "CommonMark",
+        "repositoryURL": "https://github.com/SDGGiesbrecht/swift-cmark",
+        "state": {
+          "branch": null,
+          "revision": "861f0db6f553305ad7c40c5df5ab7f9af9e88dd4",
+          "version": "0.0.50000"
+        }
+      },
+      {
+        "package": "llbuild",
+        "repositoryURL": "https://github.com/SDGGiesbrecht/swift-llbuild.git",
+        "state": {
+          "branch": null,
+          "revision": "ed2b4e08e46be355edff390c8aa245e929af1331",
+          "version": "0.0.50000"
+        }
+      },
+      {
+        "package": "SwiftPM",
+        "repositoryURL": "https://github.com/SDGGiesbrecht/swift-package-manager",
+        "state": {
+          "branch": null,
+          "revision": "964c312fc4112dcb24ee71a53ad297db69c1a720",
+          "version": "0.0.50000"
+        }
+      },
+      {
+        "package": "SwiftSyntax",
+        "repositoryURL": "https://github.com/apple/swift-syntax",
+        "state": {
+          "branch": null,
+          "revision": "43aa4a19b8105a803d8149ad2a86aa53a77efef3",
+          "version": "0.50000.0"
         }
       }
     ]
