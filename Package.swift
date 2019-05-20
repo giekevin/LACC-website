@@ -15,6 +15,7 @@ let package = Package(
         .target(
             name: "generate",
             dependencies: [
+                .product(name: "SDGLogic", package: "SDGCornerstone"),
                 .product(name: "SDGCornerstone", package: "SDGCornerstone"),
                 .product(name: "SDGWeb", package: "SDGWeb")
             ],

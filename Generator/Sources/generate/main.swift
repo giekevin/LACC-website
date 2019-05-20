@@ -1,5 +1,6 @@
 import Foundation
 
+import SDGLogic
 import SDGCornerstone
 import SDGWeb
 
@@ -12,7 +13,7 @@ let site = Site<Localization>(
     pageProcessor: LACCPageProcessor(),
     reportProgress: { print($0) })
 
-try site.generate()
+try site.generate().get()
 
 let sermonResources = repositoryStructure.externalResourcesDirectory.appendingPathComponent("Sermons")
 do {
@@ -38,4 +39,4 @@ do {
     }
 }
 
-_ = try? Shell.default.run(command: ["open", repositoryStructure.result.appendingPathComponent("index.html").path])
+_ = try? Shell.default.run(command: ["open", repositoryStructure.result.appendingPathComponent("index.html").path]).get()
