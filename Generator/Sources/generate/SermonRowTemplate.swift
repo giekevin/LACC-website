@@ -48,7 +48,7 @@ class SermonRowTemplate {
     private var filename: StrictString {
         var result = date
         if let realTitle = title {
-            result += " " + StrictString(String(realTitle.filter({ $0 != ":" })).addingPercentEncoding(withAllowedCharacters: CharacterSet.urlPathAllowed)!)
+            result += StrictString(String(" " + realTitle.filter({ $0 != ":" })).addingPercentEncoding(withAllowedCharacters: CharacterSet.urlPathAllowed)!)
         }
         return result
     }
