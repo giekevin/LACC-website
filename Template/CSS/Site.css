@@ -48,8 +48,8 @@ ul {
     flex-wrap: wrap;
 }
 
-.spacing-container > *{
-    margin-right: 2.5em
+.spacing-container > * {
+    margin-right: 2.5em;
 }
 
 .center {
