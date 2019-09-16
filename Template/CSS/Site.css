@@ -43,6 +43,15 @@ ul {
     text-indent: -4.5em;
 }
 
+.spacing-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spacing-container > *{
+    margin-right: 2.5em
+}
+
 .center {
     text-align: center;
 }
