@@ -1,16 +1,13 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.1
 
 import PackageDescription
 
 let package = Package(
     name: "Generator",
-    platforms: [
-        .macOS(.v10_13)
-    ],
     dependencies: [
-        .package(url: "https://github.com/SDGGiesbrecht/SDGCornerstone", .exact(Version(0, 18, 0))),
-        .package(url: "https://github.com/SDGGiesbrecht/SDGWeb", .exact(Version(0, 1, 0))),
-        .package(url: "https://github.com/SDGGiesbrecht/SDGCommandLine", .exact(Version(0, 7, 1)))
+        .package(url: "https://github.com/SDGGiesbrecht/SDGCornerstone", from: Version(2, 6, 0)),
+        .package(url: "https://github.com/SDGGiesbrecht/SDGWeb", from: Version(3, 1, 0)),
+        .package(url: "https://github.com/SDGGiesbrecht/SDGCommandLine", from: Version(1, 2, 0))
         ],
     targets: [
         .target(
