@@ -14,7 +14,10 @@ let package = Package(
             name: "generate",
             dependencies: [
                 .product(name: "SDGLogic", package: "SDGCornerstone"),
-                .product(name: "SDGCornerstone", package: "SDGCornerstone"),
+                .product(name: "SDGCollections", package: "SDGCornerstone"),
+                .product(name: "SDGText", package: "SDGCornerstone"),
+                .product(name: "SDGLocalization", package: "SDGCornerstone"),
+                .product(name: "SDGExternalProcess", package: "SDGCornerstone"),
                 .product(name: "SDGWeb", package: "SDGWeb"),
                 .product(name: "SDGCommandLine", package: "SDGCommandLine"),
             ],

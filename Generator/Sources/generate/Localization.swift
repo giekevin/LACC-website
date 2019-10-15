@@ -1,4 +1,4 @@
-import SDGCornerstone
+import SDGLocalization
 
 enum Localization : String, InputLocalization {
     case englishCanada = "en\u{2D}CA"

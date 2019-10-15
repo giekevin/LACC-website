@@ -1,4 +1,5 @@
-import SDGCornerstone
+import SDGCollections
+import SDGText
 import SDGWeb
 
 struct LACCPageProcessor : PageProcessor {
