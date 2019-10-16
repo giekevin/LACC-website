@@ -7,7 +7,7 @@
 
 import Foundation
 
-import SDGCornerstone
+import SDGText
 
 class SermonRowTemplate {
     

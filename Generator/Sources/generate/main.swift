@@ -1,7 +1,7 @@
 import Foundation
 
 import SDGLogic
-import SDGCornerstone
+import SDGExternalProcess
 import SDGWeb
 import SDGCommandLine
 

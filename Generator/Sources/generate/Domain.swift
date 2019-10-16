@@ -1,4 +1,5 @@
-import SDGCornerstone
+import SDGText
+import SDGLocalization
 
 let domain = UserFacing<StrictString, Localization>({ localization in
     switch localization {
