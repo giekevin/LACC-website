@@ -10,6 +10,11 @@ body {
 
 p {
     font: 1em arial, sans-serif;
+
+    /* Restores letter‐style paragraphs. */
+    margin-bottom: 1em;
+    margin-top: 1em;
+    text-indent: 0;
 }
 
 em {

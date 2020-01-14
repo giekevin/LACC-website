@@ -7,11 +7,11 @@ import SDGCommandLine
 
 ProcessInfo.applicationIdentifier = "ca.lacc.Website"
 
-let site = Site<Localization>(
+let site = Site<Localization, Unfolder>(
     repositoryStructure: repositoryStructure,
-    domain: domain,
+    siteRoot: domain,
     localizationDirectories: localizatonDirectory,
-    pageProcessor: LACCPageProcessor(),
+    author: author,
     reportProgress: { print($0) })
 
 try site.generate().get()
