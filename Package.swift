@@ -5,9 +5,9 @@ import PackageDescription
 let package = Package(
     name: "Generator",
     dependencies: [
-        .package(url: "https://github.com/SDGGiesbrecht/SDGCornerstone", from: Version(2, 6, 0)),
-        .package(url: "https://github.com/SDGGiesbrecht/SDGWeb", from: Version(3, 1, 0)),
-        .package(url: "https://github.com/SDGGiesbrecht/SDGCommandLine", from: Version(1, 2, 0))
+        .package(url: "https://github.com/SDGGiesbrecht/SDGCornerstone", from: Version(4, 2, 0)),
+        .package(url: "https://github.com/SDGGiesbrecht/SDGWeb", from: Version(5, 0, 0)),
+        .package(url: "https://github.com/SDGGiesbrecht/SDGCommandLine", from: Version(1, 2, 5))
         ],
     targets: [
         .target(
